@@ -5,11 +5,11 @@ body{
   font-family: 'Noto Sans KR', sans-serif;
 }
 ::-moz-selection { 
-  background:: rgb(201, 174, 193); 
+  background: rgb(201, 174, 193); 
   color: #fff; 
 } 
 ::selection { 
-  background:: rgb(201, 174, 193);
+  background: rgb(201, 174, 193);
   color: #fff; 
 }
 
