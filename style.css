@@ -6,8 +6,8 @@ body{
 }
 
 ::selection { 
-  color: rgb(23, 51, 165);
-  background: rgb(248, 220, 9); 
+  color: rgb(255, 212, 217);
+  background: rgb(248, 220, 9);
 }
 
 a:link{
