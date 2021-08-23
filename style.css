@@ -4,7 +4,7 @@ body{
   color: rgb(88, 255, 205);
   font-family: 'Noto Sans KR', sans-serif;
 }
-::selection{
+:selection{
   background-color: rgb(201, 174, 193);
   color: rgb(248, 220, 9);
 }  
