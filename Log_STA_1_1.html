@@ -30,7 +30,8 @@
     이런 아이디어를 생생하게 묘사한 아래 그림에서 검은색으로 그려진 함수 $f(x) = \frac{x^2}{4} + \frac{1}{2}$를 보자.
   </p>
   <p>
-	$$\begin{tikzpicture}
+	<script type="text/tikz">
+	  $$\begin{tikzpicture}
 	\draw[->, gray] (-1,0) -- (4.25,0) node[right] {$x$};
 	\draw[->, gray] (0,-0.25) -- (0,5.25) node[above] {$f(x)$};
 	
@@ -45,6 +46,7 @@
 	\draw[oldiagcolorE] (.5, 9/16) -- (1.5, 17/16) -- (1.5, 9/16) -- cycle;
 	\draw[thick] (-1,.75) parabola bend (0,0.5) (4,4.5);
 	\end{tikzpicture}$$
+	</script>
   </p>
   <p>
     $c = \frac{1}{2}$인 함수의 기울기를 찾을 때, 우리는 빗변이 그 점의 기울기에 수렴하는 삼각형을, 가령 위 그림에서는 빨간색 삼각형을 그리는 것으로 시작한다. $\beta$가 삼각형의 밑변 길이일 때, 삼각형의 높이는 $f(\frac{1}{2}+\beta) - f(\frac{1}{2})$이며, 따라서 빗변의 기울기는 다음과 같다.
