@@ -9,6 +9,10 @@ body{
   background-color: rgb(23, 51, 165);
   font-family: 'Noto Sans KR', sans-serif;
 }
+#graph{
+  display : block;
+  margin : auto;
+}
 ::selection { 
   color: rgb(23, 51, 165);
   background: rgb(248, 220, 9);
