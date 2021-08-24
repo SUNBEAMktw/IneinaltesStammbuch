@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+  <head>
+    <title>In_ein_altes_Stammbuch</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <p>
+    <h1><a href="index.html">In ein altes Stammbuch</a></h1>
+    <h1><a href="Logic.html">Logic</a></h1>
+    <h1><a href="STAOI.html">『집합론: 공개 서론』</a></h1>
+    <h1><a href="Log_STA_1.html">1. 역사와 신화</a></h1>
+    <h1><a href="Log_STA_1_1.html">1.1 무한소와 미분</a></h1>
+    </p>
+  
+  <p>
+    17세기 말, 뉴턴과 라이프니츠는 (독립적으로) 미적분학을 발견했다. 미적분학에서 특징적으로 중요하게 쓰인 것은 <em>미분(differentiation)</em>이다. 거칠게 말하면, 미분은 “변화율”(rate of change) 또는 한 점상의 어떤 함수의 기울기(gradient)에 대한 개념을 겨냥한다.
+  </p>
+  <p>
+    이런 아이디어를 생생하게 묘사한 아래 그림에서 검은색으로 그려진 함수 $f(x) = \nicefrac{x^2}{4} + \nicefrac{1}{2}$를 보자.
+  </p>
+  <p>
+    \begin{center}
+	\begin{tikzpicture}[scale=1]
+	\draw[->, gray] (-1,0) -- (4.25,0) node[right] {$x$};
+	\draw[->, gray] (0,-0.25) -- (0,5.25) node[above] {$f(x)$};
+	
+	\foreach \x/\xtext in {1/1, 2/2, 3/3, 4/4}
+	\draw[shift={(\x,0)}, gray] (0pt,2pt) -- (0pt,-2pt) node[below] {$\xtext$};
+	
+	\foreach \y/\ytext in {1/1, 2/2, 3/3, 4/4, 5/5}
+	\draw[shift={(0,\y)}, gray] (2pt,0pt) -- (-2pt,0pt) node[left] {$\ytext$};
+	
+	\draw[oldiagcolorC] (0.5, 9/16) -- (3.5, 57/16) -- (3.5, 9/16)--cycle;
+	\draw[oldiagcolorD] (.5, 9/16) -- (2.5, 33/16) -- (2.5, 9/16) -- cycle;
+	\draw[oldiagcolorE] (.5, 9/16) -- (1.5, 17/16) -- (1.5, 9/16) -- cycle;
+	\draw[thick] (-1,.75) parabola bend (0,0.5) (4,4.5);
+	\end{tikzpicture}
+\end{center}
+  </p>
+  <p>
+    $c = \nicefrac{1}{2}$인 함수의 기울기를 찾을 때, 우리는 빗변이 그 점의 기울기에 수렴하는 삼각형을, 가령 위 그림에서는 빨간색 삼각형을 그리는 것으로 시작한다. $\beta$가 삼각형의 밑변 길이일 때, 삼각형의 높이는 $f(\nicefrac{1}{2}+\beta) - f(\nicefrac{1}{2})$이며, 따라서 빗변의 기울기는 다음과 같다.
+  </p>
+  <p>
+$$\frac{f(\nicefrac{1}{2}+\beta) - f(\nicefrac{1}{2})}{\beta}.$$
+  </p>
+  <p>
+    따라서 밑변 길이가 3인 빨간 삼각형의 기울기는, 정확히 1이다. 밑변 길이가 2인 파란색 삼각형의 빗변은 더 나은 근사(approximation)를 주는데; 기울기는 3/4다. 밑변 길이가 1인 초록색 삼각형 또한 더 나은 근사를 주며; 기울기는 1/2다. 
+  </p>
+  <p>
+    삼각형이 작아지면 작아질수록 더 나은 근사치를 준다. 따라서 우리는 다음처럼 말할 수 있겠다: 무한소(infinitesimal) 밑변 길이를 가진 삼각형의 빗변은 우리에게 $c = \nicefrac{1}{2}$일 때의 기울기 자체를 준다. 이런 방식으로, 점 c에서의 함수 f의 (첫) 도함수(derivative)를 얻을 수 있다:
+  </p>
+  <p>
+    $${f'}(c) = \frac{f(c+\beta) - f(c)}{\beta} \text{ where $\beta$ is infinitesimal.}$$
+  </p>
+  <p>
+    거칠게 말하면, 바로 이것이 뉴턴과 라이프니츠가 말한 것이다.
+  </p>
+  <p>
+    하지만 그들이 이렇게 말했다면, 우리는 다음처럼 물어야 한다: 무한소란 무엇인가? 심각한 딜레마가 떠오른다. $\beta = 0$이라면, $f'$은 비-정의적(ill-defined)인데, 0 나눗셈이 요구되기 때문이다. 하지만 $\beta > 0$이라면, 우리는 단지 기울기의 근사치만을 얻을 수 있을 뿐, 기울기 자체는 얻을 수 없다.    
+  </p>
+  <p>
+    이는 시대착오적인 걱정이 아니다. 뉴턴의 추종자를 비판하는 버클리(Berkeley)를 보라.
+  </p>
+  <p>
+    "나는 기호들이 아무것 또는 아무것도 아닌 것을 가리키기 위해 만들어졌다는 것을, 그리고 원래 표기법인나는 기호들이 아무것 또는 아무것도 아닌 것을 가리키기 위해 만들어졌다는 것을, 그리고 원래 표기법인 $c + \beta$에서 $\beta$가 둘 다 증가(increment) 또는 무(nothing)로 뜻할 수 있다는 것을 인정한다. 하지만 당신이 의미하려는 게 이들 가운데 무엇이든 간에, 당신은 그것을 특정 의미와 함께 일관되게 주장해야 하며, 이중의미에 기대지 말아야 한다: 궤변(sophism)을 공표하려는 게 아닌 이상."<br>
+    Berkeley, George. 1734. <em>The Analyst; or, a Discourse Adressed to an Infidel Mathematician.</em>
+  </p>
+  <p>
+    버클리에 반해 무한소 미적분학을 변호하려면, "무한히 작은 것들"(infinitesimals)에 관한 이야기가 다분히 비유적이라는 것을 지적해야 한다. 정말 작은 삼각형이 있다면, 우리가 접선(tangent)의 충분히 좋은 근사를 얻는다는 것을 지적해야 한다. 버클리에게는 이런 지적에 대한 화답 또한 있었다: 공학에는 충분히 좋겠지만, 그것은 수학의 위상(status)을 흔든다. 왜냐하면
+  </p>
+  <p>
+    "우리가 듣기로는 <em>in rebus mathematicis errores quàm minimi non sunt contemnendi.</em>[수학의 경우, 가장 작은 오류는 방치될 수 없다.]"<br>Berkeley, George. 1734. <em>The Analyst; or, a Discourse Adressed to an Infidel Mathematician.</em>
+  </p>
+  <p>
+    이탤릭으로 인용된 부분은 버클리가 뉴턴 자신의 「곡선의 구적법」(Quadrature of Curves, 1704)에서 거의 그대로 가져온 것이다.
+  </p>
+  <p>
+    버클리의 철학적 이의는 대단히 예리하다. 그런데도 미적분학은 엄청나게 성공적인 기획이었고, 수학자들은 오류 없이 미적분학을 사용하고자 노력했다.
+  </p>
+</body>
+</html>  
