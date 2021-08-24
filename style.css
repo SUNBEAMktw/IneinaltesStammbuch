@@ -10,8 +10,7 @@ body{
   font-family: 'Noto Sans KR', sans-serif;
 }
 #graph{
-  display : block;
-  margin : auto;
+  text-align : center;
 }
 ::selection { 
   color: rgb(23, 51, 165);
