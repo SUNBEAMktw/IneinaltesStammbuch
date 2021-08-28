@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+  <head>
+    <title>In_ein_altes_Stammbuch</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  <ul>
+<li>자연수(natural numbers)의 집합 $\mathbb{N}$ - 정의 0.5;</li>
+<li>정수(integers)의 집합 $\mathbb{Z}$ - 정의 0.11;</li>
+<li>유리수(rational numbers)의 집합 $\mathbb{Q}$ - 정의 0.24;</li>
+<li>실수(real numbers)의 집합 $\mathbb{R}$ - 정의 0.25;</li>
+<li>복소수(複素數, complex numbers)의 집합 $\mathbb{C} - 정의 0.31.</li>
+</ul>
+
+</body>
+</html>
