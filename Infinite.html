@@ -4,16 +4,27 @@
     <title>In_ein_altes_Stammbuch</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
-     \usepackage{tikz}
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
   </head>
   <body>
-    <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: { inlineMath: [['$', '$']], displayMath: [['$$', '$$']] }
-    });
+<script>
+  window.WebFontConfig = {
+    custom: {
+      families: ['KaTeX_AMS', 'KaTeX_Caligraphic:n4,n7', 'KaTeX_Fraktur:n4,n7',
+        'KaTeX_Main:n4,n7,i4,i7', 'KaTeX_Math:i4,i7', 'KaTeX_Script',
+        'KaTeX_SansSerif:n4,n7,i4', 'KaTeX_Size1', 'KaTeX_Size2', 'KaTeX_Size3',
+        'KaTeX_Size4', 'KaTeX_Typewriter'],
+    },
+  };
 </script>
-<script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script
+<script defer src="https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.js" integrity="sha256-4O4pS1SH31ZqrSO2A/2QJTVjTPqVe+jnYgOWUVr7EEc=" crossorigin="anonymous"></script>
   <ul>
 <li>자연수(natural numbers)의 집합 $\mathbb{N}$ - 정의 0.5;</li>
 <li>정수(integers)의 집합 $\mathbb{Z}$ - 정의 0.11;</li>
@@ -22,7 +33,7 @@
 <li>복소수(複素數, complex numbers)의 집합 $\mathbb{C}$ - 정의 0.31.</li>
 </ul>
 
-{r,engine='tikz',fig.ext='svg',fig.width=3}
+
 \begin{tikzpicture}
 \draw (0, 0) -- (1, 0) ; 
 \foreach \x in {0,1} \draw (\x, -0.1) -- (\x, 0.1)  ;
