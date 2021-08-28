@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+  
+  <head>
+    <title>In_ein_altes_Stammbuch</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  
+  <body>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: { inlineMath: [['$', '$']], displayMath: [['$$', '$$']] }
+    });
+</script>
+<script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+    
+  <h1><a href="index.html">In ein altes Stammbuch</a></h1>
+  <h1><a href="Mat.html">Mathematics</a></h1>
+  <h1><a href="Mat_Des.html">『순수수학 속으로 무한강하』</a></h1>
+  <h1><a href="Mat_Des_0.html">0. 시작하기</a></h1>
+  <h1><a href="Mat_Des_0_0.html">수 집합
+    
+  <p>
+    이 장 후반부에서, 그리고 2장에서는 더 자세히, <em>집합(set)</em>의 개념과 마주할 것이다. 집합은 객체의 모음으로 생각될 수 있다. 얼핏 단순한 이 개념은 수학에 근본적이며, 너무 복잡하기에 형식적으로 다루지는 않을 것이다. 지금은 아래 정의로 충분할 것이다.
+    </p>
+    
+    <div id="defi">
+      <p>
+        <b>정의 0.3</b> (정의 2.1.1에서 돌아볼 것)<br>
+        집합이란 객체들의 집합이다. 집합 안의 객체는 집합의 <em>원소</em>(elements)라고 불린다. 만약 $X$가 집합이고 $x$가 객체라면, $x$가 $X$의 집합이라는 주장을 표기하기 위해 $x \in X$라고 적는다.
+      </p>
+    </div>
+    <p>
+      처음으로, 또 가장 중요하게 다룰 집합은 <em>수 집합</em>(number sets)이다. 수 집합이란, 그 원소가 <em>수</em>(number)의 특정 유형인 집합이다. 개론적인 수준에서는 많은 세부사항이 무시될 것이고, 우리는 지금 단계에서 적절한 수준의 정밀도로 작업할 것이지만, 그래도 충분한 직관을 발전시킬 수 있을 것이다.
+    </p>
+    <p>
+      수 집합을 정의하기 위해 필요한 것은 세 가지다. 무한한 선(an infinite line), 이 선상의 고정된 점(a fixed point on this line), 그리고 고정된 길이 단위(a fixed unit of length)가 그것이다.
+    </p>
+    <p>
+      시작하자. 여기 무한한 선 하나가 있다.
+    </p>
+    
+    <svg id="svgelem" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="313pt" height="4pt" viewBox="0 0 313 4" version="1.1">
+    <path style="fill:none;stroke-width:3.985;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgbrgb(88, 255, 205);stroke-opacity:1;stroke-miterlimit:10;" d="M 43.007812 24.335938 L 3089.414062 24.335938 " transform="matrix(0.1,0,0,-0.1,0,4)"/>
+    <path style=" stroke:none;fill-rule:nonzero;fill:rgb(88, 255, 205);fill-opacity:1;" d="M 0.714844 1.566406 C 1.777344 1.765625 3.503906 2.363281 4.699219 3.0625 L 4.699219 0.0742188 C 3.503906 0.769531 1.777344 1.367188 0.714844 1.566406 "/>
+    <path style=" stroke:none;fill-rule:nonzero;fill:rgb(88, 255, 205);fill-opacity:1;" d="M 312.527344 1.566406 C 311.46875 1.367188 309.738281 0.769531 308.546875 0.0742188 L 308.546875 3.0625 C 309.738281 2.363281 311.46875 1.765625 312.527344 1.566406 "/>
+    </svg>
+    
+    <p>
+      화살표는 선이 양쪽으로 끝없이 연장된다는 의도를 암시한다. 선상의 점은 수를 (정확히 말하면, 실수(實數, real numbers)를 표현할 것인데, 이는 정의 0.25에서 정의될 오도적인 용어다) 표현할 것이다. 이제 이 선상에 점 하나를 고정한 다음, ‘0’이라는 이름표를 붙이자.
+    </p>
+    
+    <svg id="svgelem" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="313pt" height="16pt" viewBox="0 0 313 16" version="1.1">
+    <defs>
+    <g>
+    <symbol overflow="visible" id="glyph0-0">
+    <path style="stroke:none;" d="M 4.578125 -3.1875 C 4.578125 -3.984375 4.53125 -4.78125 4.1875 -5.515625 C 3.734375 -6.484375 2.90625 -6.640625 2.5 -6.640625 C 1.890625 -6.640625 1.171875 -6.375 0.75 -5.453125 C 0.4375 -4.765625 0.390625 -3.984375 0.390625 -3.1875 C 0.390625 -2.4375 0.421875 -1.546875 0.84375 -0.78125 C 1.265625 0.015625 2 0.21875 2.484375 0.21875 C 3.015625 0.21875 3.78125 0.015625 4.21875 -0.9375 C 4.53125 -1.625 4.578125 -2.40625 4.578125 -3.1875 Z M 2.484375 0 C 2.09375 0 1.5 -0.25 1.328125 -1.203125 C 1.21875 -1.796875 1.21875 -2.71875 1.21875 -3.3125 C 1.21875 -3.953125 1.21875 -4.609375 1.296875 -5.140625 C 1.484375 -6.328125 2.234375 -6.421875 2.484375 -6.421875 C 2.8125 -6.421875 3.46875 -6.234375 3.65625 -5.25 C 3.765625 -4.6875 3.765625 -3.9375 3.765625 -3.3125 C 3.765625 -2.5625 3.765625 -1.890625 3.65625 -1.25 C 3.5 -0.296875 2.9375 0 2.484375 0 Z M 2.484375 0 "/>
+    </symbol>
+    </g>
+    </defs>
+    <path style="fill:none;stroke-width:3.985;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(88, 255, 205);stroke-opacity:1;stroke-miterlimit:10;" d="M 43.007812 21.054688 L 3089.414062 21.054688 " transform="matrix(0.1,0,0,-0.1,0,16)"/>
+    <path style=" stroke:none;fill-rule:nonzero;fill:rgb(88, 255, 205);fill-opacity:1;" d="M 0.714844 13.894531 C 1.777344 14.09375 3.503906 14.691406 4.699219 15.390625 L 4.699219 12.402344 C 3.503906 13.097656 1.777344 13.695312 0.714844 13.894531 "/>
+    <path style=" stroke:none;fill-rule:nonzero;fill:rgb(88, 255, 205);fill-opacity:1;" d="M 312.527344 13.894531 C 311.46875 13.695312 309.738281 13.097656 308.546875 12.402344 L 308.546875 15.390625 C 309.738281 14.691406 311.46875 14.09375 312.527344 13.894531 "/>
+    <path style="fill:none;stroke-width:3.985;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(88, 255, 205);stroke-opacity:1;stroke-miterlimit:10;" d="M 1566.210938 21.054688 L 1566.210938 49.414062 " transform="matrix(0.1,0,0,-0.1,0,16)"/>
+    <g style="fill:rgb(88, 255, 205);fill-opacity:1;">
+    <use xlink:href="#glyph0-0" x="154.131" y="7.54023"/>
+    </g>
+    </svg>
+    
+    <p>
+      이 점은 0이라는 수를 표현하는 것으로 생각될 수 있다. 이는 앞으로 측량될 다른 모든 수와 대조되는 수다. 마지막으로, 길이 단위를 고정하자.
+    </p>
+    
+    <svg id="svgelem" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30pt" height="7pt" viewBox="0 0 30 7" version="1.1">
+    <path style="fill:none;stroke-width:3.985;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(88, 255, 205);stroke-opacity:1;stroke-miterlimit:10;" d="M 4.453125 32.65625 L 287.929688 32.65625 " transform="matrix(0.1,0,0,-0.1,0,7)"/>
+    <path style="fill:none;stroke-width:3.985;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(88, 255, 205);stroke-opacity:1;stroke-miterlimit:10;" d="M 4.453125 4.335938 L 4.453125 61.015625 " transform="matrix(0.1,0,0,-0.1,0,7)"/>
+    <path style="fill:none;stroke-width:3.985;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(88, 255, 205);stroke-opacity:1;stroke-miterlimit:10;" d="M 287.929688 4.335938 L 287.929688 61.015625 " transform="matrix(0.1,0,0,-0.1,0,7)"/>
+    </svg>
+    
+    <p>
+      길이 단위는 여러모로 쓸모가 많지만, 우선 0과 다른 수가 차이를 갖는 정도를 비교하기 위한 것이다.  
+    </p>
+    
+     <ul>
+      <li>수 집합</li>
+      <li><a href="Mat_Des_0_1.html">자연수$\mathbb{N}$</a></li>
+      <li><a href="Mat_Des_0_2.html">기수</a></li>
+      <li><a href="Mat_Des_0_3.html">정수$\mathbb{Z}$</a></li>
+      <li><a href="Mat_Des_0_4.html">정수 나눗셈</a></li>
+      <li><a href="Mat_Des_0_5.html">유리수$\mathbb{Q}$</a></li>
+      <li><a href="Mat_Des_0_6.html">실수$\mathbb{R}$</a></li>
+      <li><a href="Mat_Des_0_7.html">유리수와 무리수</a></li>
+      <li><a href="Mat_Des_0_8.html">복소수$\mathbb{C}$</a></li>
+      <li><a href="Mat_Des_0_9.html">다항식</a></li>
+      <li><a href="Mat_Des_0_E.html">연습문제</a></li>
+     </ul>
+    
+    </body>
+    </html>
